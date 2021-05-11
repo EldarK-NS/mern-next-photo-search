@@ -7,7 +7,7 @@ import { getItems } from './../redux/actions/main';
 import Spinner from '../components/Spinner';
 
 function Home(props) {
-  console.log(props.userInfo)
+
   useEffect(() => {
     props.getItems()
   }, [])

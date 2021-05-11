@@ -8,7 +8,7 @@ import Head from 'next/head';
 
 
 function Favorite(props) {
-    console.log(props.userInfo)
+   
     const { items } = props.userInfo
     useEffect(() => {
         props.getItems()

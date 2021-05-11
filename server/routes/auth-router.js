@@ -51,7 +51,6 @@ function routes() {
     router.post('/login', async (req, res) => {
         try {
             let user = req.body
-            console.log(user)
             const existingUser = await UserSchema.findOne({ email: user.email })
             if (!existingUser) {
                 res.status(400).send('User does not exist !!!')
